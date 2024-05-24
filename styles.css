@@ -2,9 +2,17 @@ body {
     font-family: Arial, sans-serif;
 }
 
+h1,
+h2 {
+    color: #0389f8;
+}
+
 h2 {
     text-align: center;
-    color: #0389f8;
+}
+
+#input-section {
+    text-align: center;
 }
 
 #input-section button {
