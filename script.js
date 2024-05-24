@@ -34,29 +34,6 @@ document.getElementById('submit-button').addEventListener('click', function() {
 });
 
 /**
- * Generate bingo card container [INCOMPLETE]
- * TO DO
- * pull in card_regions data as a list
- * shuffle the list
- * append to cells
- */
-function generateBingoCard(container) {
-    container.innerHTML = '';
-    for (let i = 0; i < 9; i++) {
-        const cell = document.createElement('div');
-        cell.className = 'grid-item';
-
-        const link = document.createElement('a');
-        
-        link.href = '/';
-        link.textContent = "regions";
-
-        cell.appendChild(link);
-        container.appendChild(cell);
-    }
-}
-
-/**
  * Fetches bingo card data from a specified API endpoint.
  *
  * This function uses the Fetch API to send a GET request to the provided URL
@@ -85,6 +62,8 @@ async function getBingoCard() {
       // retrieve regions and shuffle them and output to card
       console.log("Retrieved items:", data);
       // You can further process the data here (e.g., display it in a table)
+      return(data);
+      
     } catch (error) {
       console.error("Error fetching items:", error);
     }
@@ -93,3 +72,26 @@ async function getBingoCard() {
   // Call the function to initiate the API request
   getBingoCard();
 
+/**
+ * Generate bingo card container [INCOMPLETE]
+ * TO DO
+ * pull in card_regions data as a list
+ * shuffle the list
+ * append to cells
+ */
+function generateBingoCard(container) {
+    container.innerHTML = '';
+    let testList = [1,2,3,4,5,6,7,8,9]; // this needs to pull from 
+    for (let i = 0; i < 9; i++) {
+        const cell = document.createElement('div');
+        cell.className = 'grid-item';
+
+        const link = document.createElement('a');
+
+        link.href = '/';
+        link.textContent = testList[i];
+
+        cell.appendChild(link);
+        container.appendChild(cell);
+    }
+}
