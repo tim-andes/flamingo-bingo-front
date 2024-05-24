@@ -1,4 +1,5 @@
 # Flamingo Bingo, by Tim Andes
+![image](https://github.com/tim-andes/flamingo-bingo-front/assets/64085493/d8ccd70c-4e2b-45ca-a90f-1eb39cca8c96)
 
 ### Why?
 Built to assess my performance in AWS, web development, and IaC.
