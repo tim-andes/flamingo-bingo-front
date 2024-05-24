@@ -1,3 +1,20 @@
+/**
+ * Attaches a click event listener to the submit button.
+ *
+ * This function handles the click event on the element with the ID "submit-button".
+ * When clicked, it retrieves the values from the name and email input fields
+ * (assuming their IDs are "name" and "email" respectively).
+ *
+ * If both name and email have values, it performs the following actions:
+ *   - Logs the retrieved name and email to the console.
+ *   - Hides the "input-section" element (likely containing the name and email form).
+ *   - Shows the "bingo-card-section" element (likely where the bingo card is displayed).
+ *   - Retrieves the element with the ID "bingo-card" and calls the `generateBingoCard` function
+ *     with that element as an argument (presumably to populate the bingo card).
+ *
+ * If either name or email is empty, it displays an alert message prompting the user
+ * to enter both values.
+ */
 document.getElementById('submit-button').addEventListener('click', function() {
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
@@ -16,6 +33,13 @@ document.getElementById('submit-button').addEventListener('click', function() {
     }
 });
 
+/**
+ * Generate bingo card container [INCOMPLETE]
+ * TO DO
+ * pull in card_regions data as a list
+ * shuffle the list
+ * append to cells
+ */
 function generateBingoCard(container) {
     container.innerHTML = '';
     for (let i = 0; i < 9; i++) {
@@ -23,9 +47,9 @@ function generateBingoCard(container) {
         cell.className = 'grid-item';
 
         const link = document.createElement('a');
-// another loop here to attach to regions
+        
         link.href = '/';
-        link.textContent = Math.floor(Math.random() * 100) + 1;
+        link.textContent = "regions";
 
         cell.appendChild(link);
         container.appendChild(cell);
