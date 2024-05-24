@@ -2,8 +2,7 @@
  * Attaches a click event listener to the submit button.
  *
  * This function handles the click event on the element with the ID "submit-button".
- * When clicked, it retrieves the values from the name and email input fields
- * (assuming their IDs are "name" and "email" respectively).
+ * When clicked, it retrieves the values from the name and email input fields.
  *
  * If both name and email have values, it performs the following actions:
  *   - Logs the retrieved name and email to the console.
