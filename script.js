@@ -63,7 +63,7 @@ async function getBingoCard() {
       console.log("Retrieved items:", data);
       // You can further process the data here (e.g., display it in a table)
       return(data);
-      
+
     } catch (error) {
       console.error("Error fetching items:", error);
     }
@@ -81,7 +81,7 @@ async function getBingoCard() {
  */
 function generateBingoCard(container) {
     container.innerHTML = '';
-    let testList = [1,2,3,4,5,6,7,8,9]; // this needs to pull from 
+    let testList = [1,2,3,4,5,6,7,8,9]; // this needs to fetch from API, then shuffle array
     for (let i = 0; i < 9; i++) {
         const cell = document.createElement('div');
         cell.className = 'grid-item';
