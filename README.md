@@ -1,13 +1,14 @@
-# Flamingo Bingo, by Tim Andes
+# Flamingo Bingo
+## by Tim Andes
 
-## Why?
+### Why?
 Built to assess my performance in AWS, web development, and IaC.
-## What?
+### What?
 In this game, bingo players REGISTER, receive a RANDOMLY generated 3x3 bingo card, and PLAY by submitting the world regions where they spot flamingos in the wild.
-## Where?
+### Where?
 - AWS for backend: API, user, game state tracking(?)
 - Web for frontend: HTML, CSS, JS(? I don't think a live refresh is needed on card interaction)
-## How?
+### How?
 - Only need back end on AWS framework: DynamoDB <-> Lambda <-> API Gateway
 
 # TO DO
