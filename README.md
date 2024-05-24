@@ -15,7 +15,7 @@ In this game, bingo players REGISTER, receive a RANDOMLY generated 3x3 bingo car
 [x] set up AWS account with [X] zero spend budget, [x] alt contacts, [x] admin user, [x] login as admin, [x] create CLI keys
 [x] add AWS account keys to local machine
 [x] set up Back End GH repo
-[ ] set up Front End GH rep 
+[x] set up Front End GH rep 
 
 ## Back End:
 [x] DynamoDB table with item/row being a card, containing attributes: name, email, card(regions), completions
