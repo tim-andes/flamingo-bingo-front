@@ -59,9 +59,9 @@ async function getBingoCard() {
       const data = await response.json();
   
       // Process the retrieved data (e.g., display in console, manipulate in DOM)
-      // retrieve regions and shuffle them and output to card
+      // TO DO API: Retrieve regions and shuffle them and output to card
       console.log("Retrieved items:", data);
-      // You can further process the data here (e.g., display it in a table)
+    
       return(data);
 
     } catch (error) {
